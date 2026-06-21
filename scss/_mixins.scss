@@ -1,0 +1,11 @@
+@mixin thin-text
+{
+    font-size: 8px;
+    color: #8F8E87;
+    font-weight:lighter;
+}
+
+@mixin upper-text
+{
+    text-transform:uppercase;
+}

@@ -37,3 +37,12 @@ footer .legal-links a {
   text-decoration: none;
   color: #8F8E87;
 }
+
+.hero .hero-image {
+  height: 1200px;
+  min-width: 100%;
+  background-image: url(../images/Trail-and-Timber-images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
