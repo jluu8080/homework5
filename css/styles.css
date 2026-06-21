@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.footer .footer-top {
+  height: 50px;
+  width: 50px;
+  border-bottom: 1px solid red;
+}
+.footer .footer-top .legal-links a {
+  text-decoration: none;
+}
+
+header nav {
+  height: 50px;
+  width: 100%;
+  background-color: gray;
+}
+header nav .nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: blue;
+  font-size: 14px;
+}
+
+footer .legal-links a {
+  text-decoration: none;
+  color: #8F8E87;
+}
