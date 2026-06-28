@@ -8,8 +8,17 @@ html, body {
   min-height: 100%;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px;
+}
+
+.center-content {
+  margin: 0 auto;
+  max-width: 1800px;
 }
 
 .footer .footer-top {
@@ -24,13 +33,46 @@ h1, h2, h3, h4, h5, h6, p {
 header nav {
   height: 50px;
   width: 100%;
-  background-color: gray;
+  background-color: rgba(30, 35, 24, 0.9607843137);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav .logo-name {
+  color: #F5F0E8;
+  font-size: 17.6px;
+  font-weight: 600;
+}
+header nav .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 header nav .nav-links a {
+  margin-right: 32px;
   text-decoration: none;
   text-transform: uppercase;
-  color: blue;
+  color: #C4A882;
+  font-size: 14.4px;
+}
+header nav .nav-links .book-now-button {
+  height: 40px;
+  width: 110px;
+  background-color: #2D5016;
+  border-radius: 8px;
+  padding: 8px 20px;
+}
+header nav .nav-links .book-now-button a {
+  color: #F5F0E8;
   font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-transform: none;
 }
 
 footer .legal-links a {
@@ -38,11 +80,832 @@ footer .legal-links a {
   color: #8F8E87;
 }
 
-.hero .hero-image {
+.hero {
   height: 1200px;
   min-width: 100%;
-  background-image: url(../images/Trail-and-Timber-images/hero.jpg);
+  background-image: linear-gradient(180deg, rgba(30, 35, 24, 0.3) 0%, rgba(30, 35, 24, 0.6) 60%, rgba(30, 35, 24, 0.85) 100%), url(../images/Trail-and-Timber-images/hero.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .when-established {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  color: #C4A882;
+}
+.hero h1 {
+  font-family: "Roboto-Slab";
+  font-size: 80px;
+}
+.hero .hero-text {
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 32px;
+}
+.hero .hero-buttons {
+  display: flex;
+}
+.hero .hero-buttons .start-adventure-button {
+  width: 230px;
+  height: 56px;
+  background-color: #2D5016;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 13px;
+  margin-right: 16px;
+}
+.hero .hero-buttons .start-adventure-button span {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #F5F0E8;
+}
+.hero .hero-buttons .view-trips-button {
+  height: 51px;
+  width: 151px;
+  border-radius: 10px;
+  border: 2px solid rgba(245, 240, 232, 0.6);
+  text-align: center;
+  padding-top: 15px;
+}
+.hero .hero-buttons .view-trips-button span {
+  color: #F5F0E8;
+  font-size: 16px;
+  font-weight: 600;
+}
+.hero .statistics {
+  width: 1200px;
+  margin-top: 64px;
+  border-top: 1px solid rgba(196, 168, 130, 0.2509803922);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .statistics .statistic-box {
+  width: 100px;
+  height: 65px;
+  text-align: center;
+  margin: 32px;
+}
+.hero .statistics .statistic-box .statistic-num {
+  font-family: "Roboto Slab";
+  color: #C4A882;
+  font-size: 28px;
+  font-weight: 600;
+}
+.hero .statistics .statistic-box .statistic-name {
+  font-family: "Inter", sans-serif;
+  color: rgba(245, 240, 232, 0.6980392157);
+  font-size: 13;
+  font-weight: 400;
+}
+.hero .scroll-text {
+  margin-bottom: 70px;
+  font: 11px;
+  color: #C4A882;
+}
+
+.offer {
+  height: 800px;
+  min-width: 100%;
+  background-color: #F5F0E8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.offer .offer-subheader {
+  color: #2D5016;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.offer .offer-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 48px;
+}
+.offer .offer-cards .mountain-trek-card {
+  margin-top: 10px;
+  width: 400px;
+  height: 500px;
+  background-color: #FDFAF5;
+  border: 1px solid rgba(45, 80, 22, 0.1019607843);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.offer .offer-cards .mountain-trek-card .mountrek-card-image {
+  width: 398px;
+  height: 238px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 16px;
+  background-image: url("../images/Trail-and-Timber-images/moutain-trekking.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.offer .offer-cards .mountain-trek-card .mountrek-card-image .image-tag {
+  width: 123px;
+  height: 30px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6.5px;
+  text-align: center;
+  background-color: #2D5016;
+}
+.offer .offer-cards .mountain-trek-card .mountrek-card-image .image-tag p {
+  color: #F5F0E8;
+  font-size: 11.2px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.offer .offer-cards .mountain-trek-card .mountain-trek-card-content {
+  padding: 24px;
+}
+.offer .offer-cards .mountain-trek-card .mountain-trek-card-content .duration-difficulty {
+  border-top: 1px solid rgba(45, 80, 22, 0.1019607843);
+  max-width: 339px;
+  max-height: 160px;
+  display: flex;
+  margin-top: 16px;
+  column-gap: 16px;
+  padding-top: 16px;
+}
+.offer .offer-cards .mountain-trek-card .mountain-trek-card-content .duration-difficulty .duration .duration-difficulty-title {
+  color: #C4A882;
+  font-size: 11.2px;
+  text-transform: uppercase;
+}
+.offer .offer-cards .mountain-trek-card .mountain-trek-card-content .duration-difficulty .difficulty .duration-difficulty-title {
+  color: #C4A882;
+  font-size: 11.2px;
+  text-transform: uppercase;
+}
+.offer .offer-cards .mountain-trek-card .mountain-trek-card-content .duration-difficulty .duration .duration-difficulty-p {
+  color: #1E2318;
+  font-size: 13.6px;
+}
+.offer .offer-cards .mountain-trek-card .mountain-trek-card-content .duration-difficulty .difficulty .duration-difficulty-p {
+  color: #1E2318;
+  font-size: 13.6px;
+}
+.offer .offer-cards .mountain-trek-card .mountain-trek-card-content .learn-more {
+  color: #2D5016;
+  font-size: 14.4px;
+  font-weight: 600;
+}
+.offer .offer-cards .forest-camp-card {
+  margin-top: 10px;
+  width: 400px;
+  height: 500px;
+  background-color: #FDFAF5;
+  border: 1px solid rgba(45, 80, 22, 0.1019607843);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.offer .offer-cards .forest-camp-card .forest-camp-card-image {
+  width: 398px;
+  height: 238px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 16px;
+  background-image: url("../images/Trail-and-Timber-images/forrest-camping.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.offer .offer-cards .forest-camp-card .forest-camp-card-image .image-tag {
+  width: 123px;
+  height: 30px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6.5px;
+  text-align: center;
+  background-color: #2D5016;
+}
+.offer .offer-cards .forest-camp-card .forest-camp-card-image .image-tag p {
+  color: #F5F0E8;
+  font-size: 11.2px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.offer .offer-cards .forest-camp-card .forest-camp-card-content {
+  padding: 24px;
+}
+.offer .offer-cards .forest-camp-card .forest-camp-card-content .duration-difficulty {
+  border-top: 1px solid rgba(45, 80, 22, 0.1019607843);
+  max-width: 339px;
+  max-height: 160px;
+  display: flex;
+  margin-top: 16px;
+  column-gap: 16px;
+  padding-top: 16px;
+}
+.offer .offer-cards .forest-camp-card .forest-camp-card-content .duration-difficulty .duration .duration-difficulty-title {
+  color: #C4A882;
+  font-size: 11.2px;
+  text-transform: uppercase;
+}
+.offer .offer-cards .forest-camp-card .forest-camp-card-content .duration-difficulty .difficulty .duration-difficulty-title {
+  color: #C4A882;
+  font-size: 11.2px;
+  text-transform: uppercase;
+}
+.offer .offer-cards .forest-camp-card .forest-camp-card-content .duration-difficulty .duration .duration-difficulty-p {
+  color: #1E2318;
+  font-size: 13.6px;
+}
+.offer .offer-cards .forest-camp-card .forest-camp-card-content .duration-difficulty .difficulty .duration-difficulty-p {
+  color: #1E2318;
+  font-size: 13.6px;
+}
+.offer .offer-cards .forest-camp-card .forest-camp-card-content .learn-more {
+  color: #2D5016;
+  font-size: 14.4px;
+  font-weight: 600;
+}
+.offer .offer-cards .river-expedition-card {
+  margin-top: 10px;
+  width: 400px;
+  height: 500px;
+  background-color: #FDFAF5;
+  border: 1px solid rgba(45, 80, 22, 0.1019607843);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.offer .offer-cards .river-expedition-card .river-expedition-card-image {
+  width: 398px;
+  height: 238px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 16px;
+  background-image: url("../images/Trail-and-Timber-images/river-expeditions.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.offer .offer-cards .river-expedition-card .river-expedition-card-image .image-tag {
+  width: 123px;
+  height: 30px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6.5px;
+  text-align: center;
+  background-color: #2D5016;
+}
+.offer .offer-cards .river-expedition-card .river-expedition-card-image .image-tag p {
+  color: #F5F0E8;
+  font-size: 11.2px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.offer .offer-cards .river-expedition-card .river-expedition-card-content {
+  padding: 24px;
+}
+.offer .offer-cards .river-expedition-card .river-expedition-card-content .duration-difficulty {
+  border-top: 1px solid rgba(45, 80, 22, 0.1019607843);
+  max-width: 339px;
+  max-height: 160px;
+  display: flex;
+  margin-top: 16px;
+  column-gap: 16px;
+  padding-top: 16px;
+}
+.offer .offer-cards .river-expedition-card .river-expedition-card-content .duration-difficulty .duration .duration-difficulty-title {
+  color: #C4A882;
+  font-size: 11.2px;
+  text-transform: uppercase;
+}
+.offer .offer-cards .river-expedition-card .river-expedition-card-content .duration-difficulty .difficulty .duration-difficulty-title {
+  color: #C4A882;
+  font-size: 11.2px;
+  text-transform: uppercase;
+}
+.offer .offer-cards .river-expedition-card .river-expedition-card-content .duration-difficulty .duration .duration-difficulty-p {
+  color: #1E2318;
+  font-size: 13.6px;
+}
+.offer .offer-cards .river-expedition-card .river-expedition-card-content .duration-difficulty .difficulty .duration-difficulty-p {
+  color: #1E2318;
+  font-size: 13.6px;
+}
+.offer .offer-cards .river-expedition-card .river-expedition-card-content .learn-more {
+  color: #2D5016;
+  font-size: 14.4px;
+  font-weight: 600;
+}
+
+.services {
+  height: 700px;
+  min-width: 100%;
+  background-color: #1E2318;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services .services-subheader {
+  color: #C4A882;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.services .services-header {
+  color: #F5F0E8;
+  font-size: 44px;
+  font-weight: 700;
+}
+.services .services-desc {
+  width: 460px;
+  height: 58px;
+  margin-top: 16px;
+  color: rgba(245, 240, 232, 0.6509803922);
+  font-size: 16.8px;
+  font-weight: 400;
+  text-align: center;
+}
+.services .services-cards {
+  display: flex;
+  gap: 24px;
+  margin-top: 47.82px;
+}
+.services .services-cards .guided-tours-card {
+  width: 290px;
+  height: 301px;
+  background-color: rgba(245, 240, 232, 0.0509803922);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 168, 130, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding-left: 28px;
+}
+.services .services-cards .guided-tours-card .service-card-image-holder {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background-color: rgba(45, 80, 22, 0.6);
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .services-cards .guided-tours-card .service-card-image-holder .circle {
+  width: 23.33px;
+  height: 23.33px;
+  border-radius: 50%;
+  background-color: #C4A882;
+}
+.services .services-cards .guided-tours-card .service-card-title {
+  color: #F5F0E8;
+  font-size: 18.4px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.services .services-cards .guided-tours-card .service-card-desc {
+  width: 232px;
+  height: 98px;
+  color: rgba(245, 240, 232, 0.6509803922);
+  font-size: 14.8px;
+  font-weight: 400;
+  line-height: 24.42px;
+  margin-top: 10px;
+}
+.services .services-cards .equipment-rental-card {
+  width: 290px;
+  height: 301px;
+  background-color: rgba(245, 240, 232, 0.0509803922);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 168, 130, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding-left: 28px;
+}
+.services .services-cards .equipment-rental-card .service-card-image-holder {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background-color: rgba(45, 80, 22, 0.6);
+  margin-top: 32px;
+  padding: 14px;
+}
+.services .services-cards .equipment-rental-card .service-card-title {
+  color: #F5F0E8;
+  font-size: 18.4px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.services .services-cards .equipment-rental-card .service-card-desc {
+  width: 232px;
+  height: 98px;
+  color: rgba(245, 240, 232, 0.6509803922);
+  font-size: 14.8px;
+  font-weight: 400;
+  line-height: 24.42px;
+  margin-top: 10px;
+}
+.services .services-cards .survival-training-card {
+  width: 290px;
+  height: 301px;
+  background-color: rgba(245, 240, 232, 0.0509803922);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 168, 130, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding-left: 28px;
+}
+.services .services-cards .survival-training-card .service-card-image-holder {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background-color: rgba(45, 80, 22, 0.6);
+  margin-top: 32px;
+  padding: 14px;
+}
+.services .services-cards .survival-training-card .service-card-title {
+  color: #F5F0E8;
+  font-size: 18.4px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.services .services-cards .survival-training-card .service-card-desc {
+  width: 232px;
+  height: 123px;
+  color: rgba(245, 240, 232, 0.6509803922);
+  font-size: 14.8px;
+  font-weight: 400;
+  line-height: 24.42px;
+  margin-top: 10px;
+}
+.services .services-cards .group-events-card {
+  width: 290px;
+  height: 301px;
+  background-color: rgba(245, 240, 232, 0.0509803922);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 168, 130, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding-left: 28px;
+}
+.services .services-cards .group-events-card .service-card-image-holder {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background-color: rgba(45, 80, 22, 0.6);
+  margin-top: 32px;
+  padding: 14px;
+}
+.services .services-cards .group-events-card .service-card-title {
+  color: #F5F0E8;
+  font-size: 18.4px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.services .services-cards .group-events-card .service-card-desc {
+  width: 232px;
+  height: 98px;
+  color: rgba(245, 240, 232, 0.6509803922);
+  font-size: 14.8px;
+  font-weight: 400;
+  line-height: 24.42px;
+  margin-top: 10px;
+}
+
+.promise {
+  width: 100%;
+  height: 752px;
+  background-color: #F5F0E8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+.promise .image-holder {
+  height: 560px;
+  width: 584px;
+  border-radius: 20px;
+  background-image: url(../images/Trail-and-Timber-images/why-us.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+}
+.promise .image-holder .image-tag {
+  width: 172px;
+  height: 77px;
+  border-radius: 14px;
+  background-color: #2D5016;
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-left: 20px;
+}
+.promise .image-holder .image-tag .years {
+  color: #C4A882;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.promise .image-holder .image-tag p {
+  color: rgba(245, 240, 232, 0.8);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.promise .promise-content {
+  width: 584px;
+  height: 521px;
+}
+.promise .promise-content .promise-subheader {
+  color: #2D5016;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.16px;
+}
+.promise .promise-content .promise-header {
+  margin-bottom: 20px;
+  color: #1E2318;
+  font-size: 40px;
+  font-weight: 700;
+}
+.promise .promise-content .promise-desc {
+  color: #6B6355;
+  font-size: 16px;
+  font-weight: 400;
+}
+.promise .checklist {
+  margin-top: 32px;
+  display: flex;
+}
+.promise .checklist .checkmark-images {
+  display: flex;
+  flex-direction: column;
+}
+.promise .checklist .checkmark-images img {
+  margin-right: 12px;
+  margin-bottom: 18px;
+  width: 18px;
+  height: 20px;
+  object-fit: cover;
+}
+.promise .checklist .checklist-desc {
+  color: #1E2318;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6px;
+}
+
+.reviews {
+  width: 100%;
+  height: 620px;
+  background-color: #2D3A22;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reviews .reviews-subheader {
+  color: #C4A882;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.16px;
+  text-transform: uppercase;
+}
+.reviews .reviews-header {
+  color: #F5F0E8;
+  font-size: 44px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 48px;
+}
+.reviews .review-cards {
+  display: flex;
+  gap: 28px;
+}
+.reviews .review-cards .review-card1 {
+  width: 392px;
+  height: 300px;
+  background-color: rgba(245, 240, 232, 0.0588235294);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 168, 130, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 32px;
+}
+.reviews .review-cards .review-card1 .star-rating {
+  margin-top: 32px;
+  height: 25px;
+  width: 100px;
+}
+.reviews .review-cards .review-card1 .review-desc {
+  width: 326px;
+  height: 133px;
+  color: rgba(245, 240, 232, 0.8509803922);
+  font-size: 15.2px;
+  font-weight: 400;
+  margin-bottom: -40px;
+}
+.reviews .review-cards .review-card1 .reviewer {
+  display: flex;
+}
+.reviews .review-cards .review-card1 .reviewer .reviewer-photo {
+  margin-right: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid rgba(196, 168, 130, 0.4);
+  background-image: url("../images/Trail-and-Timber-images/maya-chen.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reviews .review-cards .review-card1 .reviewer .reviewer-info .name {
+  color: #F5F0E8;
+  font-size: 15.2px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.reviews .review-cards .review-card1 .reviewer .reviewer-info .service-and-date {
+  color: #C4A882;
+  font-size: 12.48px;
+  font-weight: 400;
+}
+.reviews .review-cards .review-card2 {
+  width: 392px;
+  height: 300px;
+  background-color: rgba(245, 240, 232, 0.0588235294);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 168, 130, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 32px;
+}
+.reviews .review-cards .review-card2 .star-rating {
+  margin-top: 32px;
+  height: 25px;
+  width: 100px;
+}
+.reviews .review-cards .review-card2 .review-desc {
+  width: 326px;
+  height: 133px;
+  color: rgba(245, 240, 232, 0.8509803922);
+  font-size: 15.2px;
+  font-weight: 400;
+  margin-bottom: -40px;
+}
+.reviews .review-cards .review-card2 .reviewer {
+  display: flex;
+}
+.reviews .review-cards .review-card2 .reviewer .reviewer-photo {
+  margin-right: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid rgba(196, 168, 130, 0.4);
+  background-image: url("../images/Trail-and-Timber-images/jordan-okafor.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reviews .review-cards .review-card2 .reviewer .reviewer-info .name {
+  color: #F5F0E8;
+  font-size: 15.2px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.reviews .review-cards .review-card2 .reviewer .reviewer-info .service-and-date {
+  color: #C4A882;
+  font-size: 12.48px;
+  font-weight: 400;
+}
+.reviews .review-cards .review-card3 {
+  width: 392px;
+  height: 300px;
+  background-color: rgba(245, 240, 232, 0.0588235294);
+  border-radius: 16px;
+  border: 1px solid rgba(196, 168, 130, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 32px;
+}
+.reviews .review-cards .review-card3 .star-rating {
+  margin-top: 32px;
+  height: 25px;
+  width: 100px;
+}
+.reviews .review-cards .review-card3 .review-desc {
+  width: 326px;
+  height: 133px;
+  color: rgba(245, 240, 232, 0.8509803922);
+  font-size: 15.2px;
+  font-weight: 400;
+  margin-bottom: -40px;
+}
+.reviews .review-cards .review-card3 .reviewer {
+  display: flex;
+}
+.reviews .review-cards .review-card3 .reviewer .reviewer-photo {
+  margin-right: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid rgba(196, 168, 130, 0.4);
+  background-image: url("../images/Trail-and-Timber-images/maya-chen.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reviews .review-cards .review-card3 .reviewer .reviewer-info .name {
+  color: #F5F0E8;
+  font-size: 15.2px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.reviews .review-cards .review-card3 .reviewer .reviewer-info .service-and-date {
+  color: #C4A882;
+  font-size: 12.48px;
+  font-weight: 400;
+}
+
+.book-with-us {
+  width: 100%;
+  height: 500px;
+  background-color: #2D5016;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.book-with-us .book-with-us-subtitle {
+  color: #C4A882;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.16px;
+}
+.book-with-us .book-with-us-title {
+  color: #F5F0E8;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+.book-with-us .book-with-us-content .book-with-us-desc {
+  width: 500px;
+  height: 90px;
+  color: rgba(245, 240, 232, 0.8);
+  font-size: 17.6px;
+  font-weight: 400;
+  text-align: center;
+}
+.book-with-us .book-with-us-content .book-with-us-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.book-with-us .book-with-us-content .book-with-us-buttons .book-today-button {
+  width: 164px;
+  height: 56px;
+  border-radius: 10px;
+  background-color: #C4A882;
+  color: #1E2318;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book-with-us .book-with-us-content .book-with-us-buttons .view-all-trips-button {
+  width: 164px;
+  height: 56px;
+  border-radius: 10px;
+  border: 1px solid #C4A882;
+  color: #F5F0E8;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

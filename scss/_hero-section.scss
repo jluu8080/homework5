@@ -1,13 +1,133 @@
+// Gotta Fix Gradient, Font Families, and Wrapping Text
 .hero
 {
-    .hero-image
-    {
-        height: 1200px;
-        min-width: 100%;
-        background-image: url(../images/Trail-and-Timber-images/hero.jpg);
+    height: 1200px;
+    min-width: 100%;
+    background-image: 
+    linear-gradient(180deg, rgba(30, 35, 24, 0.3) 0%, rgba(30, 35, 24, 0.6) 60%, rgba(30, 35, 24, 0.85) 100%),
+    url(../images/Trail-and-Timber-images/hero.jpg);
 
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+
+    .when-established
+    {
+        text-transform:uppercase;
+        font-size:13px;
+        font-weight: 600;
+        color: #C4A882;
+    }
+
+    h1
+    {
+        font-family: "Roboto-Slab";
+        font-size: 80px;
+    }
+
+    .hero-text
+    {
+        font-family: "Inter";
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .hero-buttons
+    {
+        display:flex;
+
+        .start-adventure-button
+        {
+            width: 230px;
+            height: 56px;
+
+            background-color: #2D5016;
+            border-radius: 10px;
+
+            text-align:center;
+            padding-top: 13px;
+
+            margin-right: 16px;
+
+            span
+            {
+                font-family: "Inter", sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color:#F5F0E8;
+            }
+        }
+
+        .view-trips-button
+        {
+            height: 51px;
+            width: 151px;
+
+            border-radius: 10px;
+            border: 2px solid #F5F0E899;
+
+            text-align:center;
+            padding-top:15px;
+
+            span
+            {
+                color: #F5F0E8;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .statistics
+    {
+        width: 1200px; //Need to fix this width for divs & sections, but without Display:flex; won't work
+
+        margin-top: 64px;
+        border-top: 1px solid #C4A88240;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        //Fonts are being weird
+        .statistic-box
+        {
+            width: 100px;
+            height: 65px;
+
+            text-align:center;
+            margin: 32px;
+
+            .statistic-num
+            {
+                font-family: "Roboto Slab";
+                color: #C4A882;
+                font-size:28px;
+                font-weight: 600;
+            }
+
+            .statistic-name
+            {
+                font-family: "Inter", sans-serif;
+                color:#F5F0E8B2;
+                font-size:13;
+                font-weight:400;
+                
+            }
+        }
+    }
+
+    //Scroll text is not where it's suppose to be.
+    .scroll-text
+    {
+        // margin-top:auto;
+        margin-bottom: 70px;
+        font:11px;
+        color: #C4A882;
     }
 }

@@ -1,3 +1,5 @@
+<!-- Subheaders needed letter spacing -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +16,14 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+
+    <!-- Font Family Roboto Slab -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,25 +31,25 @@
         <nav>
             <div class="logo">
                 <img src="images/Trail-and-Timber-images/pine-tree.png" alt="" class="logo-image">
-
+                
                 <p class="logo-name">Trail & Timer</p>
+            
             </div>
+
+            <!-- <p class="logo-name">Trail & Timer</p> -->
 
             <div class="nav-links">
                 <a href="#">Adventures</a>
-                
                 <a href="#">Gear</a>
-                
                 <a href="#">Guides</a>
-                
                 <a href="#">About</a>
-                
                 <a href="#">Contact</a>
+
+                <div class="book-now-button">
+                   <a href = "#">Book Now</a>
+                </div>
             </div>
             
-            <div class="book-now-button">
-                <span>Book Now</span>
-            </div>
         </nav>
 
     </header>
@@ -49,8 +59,6 @@
 <main>
 
     <section class="hero">
-        <div class="hero-image"></div>
-
         <p class="when-established">Guided Adventures Since 2009</p>
 
         <h1>Explore Beyond the Trail</h1>
@@ -70,143 +78,251 @@
         <div class="statistics">
             <div class="statistic-box">
                 <div class="statistic-num">500+</div>
+                
                 <div class="statistic-name">Guided Trips</div>
+            </div>
 
+            <div class="statistic-box">
                 <div class="statistic-num">2,400+</div>
+                
                 <div class="statistic-name">Happy Adventures</div>
+            </div>
 
+            <div class="statistic-box">
                 <div class="statistic-num">15+</div>
                 <div class="statistic-name">Years Experience</div>
+            </div>
 
 
+            <div class="statistic-box">
                 <div class="statistic-num">98%</div>
                 <div class="statistic-name">Safety Record</div>
-
-                <p>SCROLL</p>
             </div>
+
         </div>
+        <p class="scroll-text">SCROLL</p>
     </section>
 
     <section class="offer">
+        <p class="offer-subheader">What We Offer</p>
+
+        <h1>Feature Adventures</h1>
+
+        <div class="offer-desc">Hand-crafted trips for every kind of explorer. Choose your terrain and we'll take care of the rest.</div>
+
         <div class="offer-cards">
             <div class="mountain-trek-card">
-                <div class="card-tag">Most Popular</div>
-
-                <div class="card-title">Mountain Trekking</div>
-                <div class="card-paragraph">Summit alpine peaks with our certified mountain guides. Routes for all abilities, from scenic day hikes to multi-day ridge traverses</div>
-
-                <div class="duration-difficulty">
-                    <div class="headers">
-                        <p>Duration</p>
-                        <p>Difficulty</p>
+                <div class="mountrek-card-image">
+                    <div class="image-tag">
+                        <p>Most Popular</p>
                     </div>
+                </div>
 
-                    <div class="info">
-                        <p>2-7 Days</p>
-                        <p>Moderate-Strenuous</p>
+                <div class="mountain-trek-card-content">
+                    <h2 class="card-title">Mountain Trekking</h2>
+
+                    <div class="card-paragraph">Summit alpine peaks with our certified mountain guides. Routes for all abilities, from scenic day hikes to multi-day ridge traverses</div>
+
+                    <div class="duration-difficulty">
+                        <div class="duration">
+                            <p class="duration-difficulty-title">Duration</p>
+                            
+                            <p class="duration-difficulty-p">2-7 Days</p>
+                        </div>
+
+                        <div class="difficulty">
+                            <p class="duration-difficulty-title">Difficulty</p>
+
+                            <p class="duration-difficulty-p">Moderate-Strenuous</p>
+                        </div>
+
+                        <!-- <div class="learn-more">
+                            <p>Learn More -></p>
+                        </div> -->
                     </div>
 
                     <div class="learn-more">
                         <p>Learn More -></p>
                     </div>
                 </div>
-
+               
             </div>
 
             <div class="forest-camp-card">
-                <div class="card-tag">Family Friendly</div>
-
-                <div class="card-title">Forest Camping</div>
+                <div class="forest-camp-card-image">
+                    <div class="image-tag">
+                        <p>Family Friendly</p>
+                    </div>
+                </div>
                 
-                <div class="card-paragraph">Disconnect and recharge beneath a canopy of old-growth treets. We handle all gear and setup - you focus on the stars.</div>
+                <div class="forest-camp-card-content">
+                    <h2 class="card-title">Forest Camping</h2>
 
-                <div class="duration-difficulty">
-                    <div class="headers">
-                        <p>Duration</p>
-                        <p>Difficulty</p>
+                    <div class="card-paragraph">Disconnect and recharge beneath a canopy of old-growth treets. We handle all gear and setup - you focus on the stars.</div>
+
+                    <div class="duration-difficulty">
+                        <div class="duration">
+                            <p class="duration-difficulty-title">Duration</p>
+
+                            <p class="duration-difficulty-p">1-4 Nights</p>
+                        </div>
+
+                        <div class="difficulty">
+                            <p class="duration-difficulty-title">Difficulty</p>
+                            
+                            <p class="duration-difficulty-p">Easy-Moderate</p>
+                        </div>
+
                     </div>
-
-                    <div class="info">
-                        <p>1-4 Nights</p>
-                        <p>Easy-Moderate</p>
+                    
+                    <div class="learn-more">
+                        <p>Learn More -></p>
                     </div>
-
-                    <p>Learn More -></p>
                 </div>
             </div>
 
-            <div class="river-exped-card">
-                <div class="card-tag">Thrill Seekers</div>
-                <div class="card-title">River Expeditions</div>
-                <div class="card-paragraph">Navigate rushing rapids and calm canyon stretches with experienced river guides and top-of-the-line safety equipment.</div>
 
-                <div class="duration-difficulty">
-                    <div class="headers">
-                        <p>Duration</p>
-                        <p>Difficulty</p>
+            <div class="river-expedition-card">
+                
+                <div class="river-expedition-card-image">
+                    <div class="image-tag">
+                        <p>Thrill Seekers</p>
+                    </div>
+                </div>
+            
+                <div class="river-expedition-card-content">
+                    <h2 class="card-title">River Expeditions</h2>
+
+                    <div class="card-paragraph">Navigate rushing rapids and calm canyon stretches with experienced river guides and top-of-the-line safety equipment.</div>
+
+                    <div class="duration-difficulty">
+                        <div class="duration">
+                            <p class="duration-difficulty-title">Duration</p>
+
+                            <p class="duration-difficulty-p"></p>Half Day-3 Days</p>
+                        </div>
+
+                        <div class="difficulty">
+                            <p class="duration-difficulty-title">Difficulty</p>
+
+                            <p class="duration-difficulty-p"></p>Moderate-Expert</p>
+                        </div>
                     </div>
 
-                    <div class="info">
-                        <p>Half Day-3 Days</p>
-                        <p>Moderate-Expert</p>
+                    <div class="learn-more">
+                        <p>Learn More-></p>
                     </div>
 
-                    <p>Learn More-></p>
                 </div>
             </div>
-
         </div>
 
     </section>
 
     <section class="services">
-        <p class="service-subheader">Our Services</p>
-        <h1 class="service-header">Eerything You Need</h1>
-        <div class="service-desc">From first timers to seasoned backcountry veterans, we have a service built for your next step outdoors.</div>
 
-        <div class="service-cards">
+        <p class="services-subheader">Our Services</p>
+
+        <div class="services-header">Everything You Need</div>
+        
+        <div class="services-desc">From first timers to seasoned backcountry veterans, we have a service built for your next step outdoors.</div>
+
+        <!-- Pictures given don't look exactly like the prototype, unsure what happened there. -->
+        <div class="services-cards">
             <div class="guided-tours-card">
-                <img src="/images/Trail-and-Timber-images/compass.png" alt="" class="service-card-image">
-                <div class="service-card-title"></div>
-                <p class="service-card-desc"></p>
+                <div class="service-card-image-holder">
+                    <div class="circle"></div>
+                </div>
+
+                <div class="service-card-title">Guided Tours</div>
+
+                <p class="service-card-desc">
+                Led by certified wilderness professionals with deep local knowledge of every trail, ridge, and waterway we traverse.
+                </p>
             </div>
 
             <div class="equipment-rental-card">
-                <img src="" alt="" class="service-card-image">
-                <div class="service-card-title"></div>
-                <p class="service-card-desc"></p>
+                <!-- I feel like this takes the clipboard png?
+                Need to find pic for this card -->
+                <div class="service-card-image-holder">
+                    <img src="/images/Trail-and-Timber-images/clipboard.png" alt="" class="service-card-image">
+                </div>
+
+                <div class="service-card-title">Equipment Rentals</div>
+                
+                <p class="service-card-desc">Premium tents, packs, technical clothing, and navigation tools — fully inspected and ready to go before each trip.</p>
             </div>
 
             <div class="survival-training-card">
-                <img src="" alt="" class="service-card-image">
-                <div class="service-card-title"></div>
-                <p class="service-card-desc"></p>
+                <div class="service-card-image-holder">
+                    <img src="/images/Trail-and-Timber-images/shield.png" alt="" class="service-card-image">
+                </div>
+                
+                <div class="service-card-title">Survival Training</div>
+                
+                <p class="service-card-desc">From fire-starting and shelter-building to emergency navigation — gain the confidence to handle the unexpected.</p>
             </div>
 
             <div class="group-events-card">
-                <img src="" alt="" class="service-card-image">
-                <div class="service-card-title"></div>
-                <p class="service-card-desc"></p>
+                <div class="service-card-image-holder">
+                    <img src="/images/Trail-and-Timber-images/people.png">
+                </div>
+                
+                <div class="service-card-title">Group Events</div>
+                
+                <p class="service-card-desc">Corporate retreats, school excursions, and custom group experiences designed to build teamwork and lasting memories.</p>
             </div>
         </div>
     </section>
 
 
     <section class="promise">
-        <img src="" alt="" class="promise-image">
+        <div class="image-holder">
+            <div class="image-tag">
+                <p class="years">15+</p>
+                <p>Years in The Field</p>
+            </div>
+        </div>
 
-        <div class="promise-desc">
-            <p class="promise-subheader"></p>
+        <div class="promise-content">
+            <p class="promise-subheader">Our Promise</p>
 
-            <h1 class="promise-header"></h1>
+            <div class="promise-header">Why Adventure With Us</div>
 
-            <p></p>
+            <div class="promise-desc">
+                <p>Trail & Timber was founded by a pair of wilderness guides who believed that the outdoors should be accessible, safe, and deeply meaningful — not just a checkbox on a bucket list.</p>
 
-            <p></p>
+                <p>Every trip is designed with intention. We match terrain to skill level, keep groups intimate, and ensure our guides know the land as well as they know their guests.</p>
+            </div>
 
             <div class="checklist">
-                <img src="" alt="" class="check-image">
-                <p class="check-desc"></p>
+                <div class="checkmark-images">
+                    <img src="/images/Trail-and-Timber-images/checkmark.png"/>
+
+                    <img src="/images/Trail-and-Timber-images/checkmark.png"/>
+
+                    <img src="/images/Trail-and-Timber-images/checkmark.png"/>
+
+                    <img src="/images/Trail-and-Timber-images/checkmark.png"/>
+
+                    <img src="/images/Trail-and-Timber-images/checkmark.png"/>
+
+                    <img src="/images/Trail-and-Timber-images/checkmark.png"/>
+                </div>
+
+                <div class="checklist-desc">
+                    <p>IFMGA-certified mountain guides with 10+ years field experience</p>
+
+                    <p>Small groups of 8 or fewer for a personal, immersive experience</p>
+
+                    <p>Industry-leading safety protocols and real-time weather monitoring</p>
+
+                    <p>Premium gear: Black Diamond, MSR, and Patagonia equipment</p>
+
+                    <p>Leave No Trace certified — we protect the places we explore</p>
+
+                    <p>24/7 emergency support on every guided trip</p>
+                </div>
 
             </div>
         </div>
@@ -214,43 +330,152 @@
 
 
     <section class="reviews">
+
+        <div class="reviews-subheader">Adventure Stories</div>
+
+        <div class="reviews-header">What our Guests Say</div>
+
         <div class="review-cards">
             <div class="review-card1">
-                <img src="" alt="" class="star-rating">
-                <p class="review-desc"></p>
+                <img src="/images/Trail-and-Timber-images/5-star-image.png" alt="" class="star-rating">
+
+                <p class="review-desc">"Trail & Timber turned what I thought would be a terrifying summit attempt into the most empowering day of my life. Our guide, Dani, knew every switchback and kept the whole group laughing the entire way up."</p>
                 
                 <div class="reviewer">
-                    <img src="" alt="" class="reviewer-photo">
-                    <p class="since"></p>
+                    <div class="reviewer-photo"></div>
+
+                    <div class="reviewer-info">
+                        <p class="name">Maya Chen</p>
+
+                        <p class="service-and-date">Mountain Trekking — June 2024</p>
+                    </div>
                 </div>
             </div>
 
             <div class="review-card2">
-                <img src="" alt="" class="star-rating">
-                <p class="review-desc"></p>
+                <img src="/images/Trail-and-Timber-images/5-star-image.png" alt="" class="star-rating">
+
+                <p class="review-desc">"We brought our two kids (ages 9 and 12) for a three-night forest camp. Zero stress — they handled everything from bear boxes to stargazing maps. Our family still talks about the fireflies on night two."</p>
                 
                 <div class="reviewer">
-                    <img src="" alt="" class="reviewer-photo">
-                    <p class="since"></p>
+                    <div class="reviewer-photo"></div>
+
+                    <div class="reviewer-info">
+                        <p class="name">Jordan & Priya Okafor</p>
+
+                        <p class="service-and-date">Mountain Trekking — June 2024</p>
+                    </div>
                 </div>
             </div>
 
             <div class="review-card3">
-                <img src="" alt="" class="star-rating">
-                <p class="review-desc"></p>
+                <img src="/images/Trail-and-Timber-images/5-star-image.png" alt="" class="star-rating">
+
+                <p class="review-desc">"I've done whitewater on three continents. This was the best-run trip I've experienced — the safety briefing was thorough without being over-cautious, and the canyon section was jaw-dropping."</p>
                 
                 <div class="reviewer">
-                    <img src="" alt="" class="reviewer-photo">
-                    <p class="since"></p>
+                    <div class="reviewer-photo"></div>
+
+                    <div class="reviewer-info">
+                        <p class="name">Rafael Torres</p>
+
+                        <p class="service-and-date">River Expedition — May 2024</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="book-with-us"></section>
+    <section class="book-with-us">
+        <div class="book-with-us-subtitle">Limited Spots Available</div>
+
+        <div class="book-with-us-title">Ready For Your Next Adventure?</div>
+
+        <div class="book-with-us-content">
+            <div class="book-with-us-desc">Join hundreds of adventurers who have explored the outdoors with Trail & Timber. Your next great story starts here.</div>
+
+            <div class="book-with-us-buttons">
+                <div class="book-today-button">Book Today</div>
+
+                <div class="view-all-trips-button">View All Trips</div>
+            </div>
+        </div>
+
+    </section>
 
     <footer>
-        <div class="footer-top"></div>
+        <div class="footer-top">
+            <div class="desc-and-contact-column">
+                <div class="logo">
+                    <img src="images/Trail-and-Timber-images/pine-tree.png" alt="" class="logo-image">
+                    
+                    <p class="logo-name">Trail & Timer</p>
+                
+                </div>
+
+                <div class="column-desc">Guiding adventurers into the wild since 2009. We believe every trail has a story worth telling.</div>
+
+                <div class="phone-number">
+                    <img url="" />
+
+                    <p>(541) 555-0182</p>
+                </div>
+
+                <div class="email">
+                    <img url=""/>
+
+                    <p>hello@trailerandtimber.com</p>
+                </div>
+
+                <div class="location">
+                    <img url="" />
+
+                    <p>Bend, Oregon 97701</p>
+                </div>
+            </div>
+
+            <div class="company-column">
+                <div class="column-title">Company</div>
+
+                <p>About Us</p>
+                
+                <p>Our Guides</p>
+
+                <p>Sustainability</p>
+
+                <p>Press & Media</p>
+
+                <p>Careers</p>
+            </div>
+
+            <div class="adventures-column">
+                <div class="column-title">Adventures</div>
+                <p>Mountain Trekking</p>
+                <p>Forest Camping</p>
+                <p>River Expeditions</p>
+                <p>Winter Snowshow</p>
+                <p>Cutson Trips</p>
+            </div>
+
+            <div class="resources-column">
+                <div class="column-title">Resources</div>
+                <p>Gear Chekclist</p>
+                <p>Trail Conditions</p>
+                <p>Safety Guidelines</p>
+                <p>Trip FAQ</p>
+                <p>Gift Cards</p>
+            </div>
+
+            <div class="stay-connected-column">
+                <div class="column-title">Stay Connected</div>
+
+                <div class="column-desc">Trip alerts, trail conditions, and gear guides — straight to your inbox.</div>
+
+                <div class="email-field"></div>
+
+                <div class="subscribe-button"></div>
+            </div>
+        </div>
 
         <div class="footer-bottom">
             <div class="copyright">© 2024 Trail & Timer Adventures. All rights reserved.</div>

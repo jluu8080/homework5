@@ -8,8 +8,19 @@ html, body {
  min-height: 100%;
 }
 
+body
+{
+    font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6, p {
  margin-bottom: 16px;
+}
+
+.center-content
+{
+    margin: 0 auto;
+    max-width: 1800px;
 }
 
 .footer

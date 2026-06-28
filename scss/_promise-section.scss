@@ -1,0 +1,128 @@
+.promise
+{
+    width: 100%;
+    height: 752px;
+    background-color:#F5F0E8;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 64px;
+
+    .image-holder
+    {
+        height: 560px;
+        width: 584px;
+
+        border-radius:20px;
+
+        background-image: url(../images/Trail-and-Timber-images/why-us.avif);
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+
+
+        display:flex;
+        align-items:flex-end;
+        padding: 24px;
+
+        .image-tag
+        {
+            width: 172px;
+            height: 77px;
+            border-radius: 14px;
+
+            background-color: #2D5016;
+
+            
+            display:flex;
+            flex-direction:column;
+            padding-top:16px;
+            padding-left:20px;
+
+            .years
+            {
+                color:#C4A882;
+                font-size:24px;
+                font-weight:700;
+
+                text-transform:uppercase;
+                margin-bottom:0;
+            }
+
+            p
+            {
+                color: #F5F0E8CC;
+                font-size:12px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .promise-content
+    {
+        width: 584px;
+        height: 521px;
+
+        .promise-subheader
+        {
+            color:#2D5016;
+            font-size: 12px;
+            font-weight: 600;
+            
+            text-transform: uppercase;
+            letter-spacing: 2.16px;
+        }
+
+        .promise-header
+        {
+            margin-bottom: 20px;
+
+            color:#1E2318;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .promise-desc
+        {
+            color: #6B6355;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+    }
+
+    .checklist
+    {
+        margin-top: 32px;
+        display:flex; //To get everything in a row
+
+        .checkmark-images
+        {
+            display:flex;
+            flex-direction:column;
+            img
+            {
+                margin-right: 12px;
+                margin-bottom: 18px;
+
+                width:18px;
+                height: 20px;
+                object-fit: cover;
+            }
+        }
+
+        .checklist-desc
+        {
+            //Just to fix the weird unevenness between text & checkmark
+            color:#1E2318;
+
+            display:flex;
+            flex-direction:column;
+            gap: 1.6px;
+        }
+
+    }
+
+
+}
