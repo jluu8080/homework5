@@ -33,6 +33,6 @@ Mobile Responsive Layout must do the follow:
 
 
 
-Live-Website URL:https://in-info-web4.luddy.indianapolis.iu.edu/~jasoluu/n215/homework5/
+Live-Website URL: http://in-info-web4.luddy.indianapolis.iu.edu/home/students/jasoluu/public_html/n215/homework5
 <br>
 Github URL: https://github.com/jluu8080/homework5.git
